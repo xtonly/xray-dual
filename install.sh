@@ -598,7 +598,7 @@ view_all_info() {
             [[ "$is_quiet" = false ]] && error "VLESS配置不完整，可能已损坏。"
         else
             display_ip=$ip && [[ $ip =~ ":" ]] && display_ip="[$ip]"
-            link_name_raw="$host X-reality"
+            link_name_raw="$host"
             link_name_encoded=$(echo "$link_name_raw" | sed 's/ /%20/g')
             vless_url="vless://${uuid}@${display_ip}:${port}?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&sni=${domain}&fp=chrome&pbk=${public_key}&sid=${shortid}#${link_name_encoded}"
             links_array+=("$vless_url")
