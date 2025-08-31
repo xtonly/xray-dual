@@ -628,7 +628,7 @@ view_all_info() {
         port=$(echo "$ss_inbound" | jq -r '.port')
         method=$(echo "$ss_inbound" | jq -r '.settings.method')
         password=$(echo "$ss_inbound" | jq -r '.settings.password')
-        link_name_raw="$host X-ss2022"
+        link_name_raw="$host-SS"
         user_info_base64=$(echo -n "${method}:${password}" | base64 -w 0)
         ss_url="ss://${user_info_base64}@${ip}:${port}#${link_name_raw}"
         links_array+=("$ss_url")
