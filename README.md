@@ -19,12 +19,12 @@
 
 ## 一键脚本
 ```
-bash <(curl -L https://raw.githubusercontent.com/yahuisme/xray-dual/main/install.sh)
+bash <(curl -L https://raw.githubusercontent.com/xtonly/xray-dual/refs/heads/main/install.sh)
 ```
 
 ## 无交互安装双协议
 ```
-bash <(curl -L https://raw.githubusercontent.com/yahuisme/xray-dual/main/install.sh) install --type dual --vless-port 12345 --uuid 'd0f6a483-51b3-44eb-94b6-1f5fc9272c81' --sni www.sega.com --ss-port 23456 --ss-pass 'X3Z7Cp6YoxFvjD1dS+Gy4w=='
+bash <(curl -L https://raw.githubusercontent.com/yahuisme/xray-dual/main/install.sh) install --type dual --vless-port 30345 --uuid 'dd1a7cc1-6bbe-07de-9adc-f839b3feb749' --sni www.icloud.com --ss-port 30355 --ss-pass '6huv2yEkv*_$uL7l9z7Lri4u'
 ```
 
 以上无交互脚本均可以自行修改端口、UUID、网址和 ss-2022 密钥。
